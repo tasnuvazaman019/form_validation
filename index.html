@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation</title>
+    <!-- css llinks -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- form starts -->
+  <form class="row g-3 needs-validation" novalidate>
+     <!-- first name -->
+    <div class="col-md-6">
+      <label for="f_name" class="form-label">First name</label>
+      <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter your first name" required>
+      <div class="valid-feedback">
+      Looks good!
+      </div>
+      <div class="invalid-feedback">
+        Enter your first name.
+      </div>
+    </div>
+     <!-- last name -->
+    <div class="col-md-6">
+      <label for="l_name" class="form-label">Last name</label>
+      <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter your last name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+       <div class="invalid-feedback">
+        Enter your last name.
+      </div>
+    </div>
+      <!-- email -->
+    <div class="col-md-12">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control email" id="email" name="email" placeholder="Enter your email Id" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Enter your email address.
+        </div>
+      </div>
+
+    <div class="col-12">
+     <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+     </div>
+      </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+
+  </form>
+    <!-- form ends -->
+    </div>
+    
+
+    <!-- script links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
